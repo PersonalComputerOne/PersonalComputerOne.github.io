@@ -311,6 +311,7 @@ tr {
   align-items: center;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .contact-box {
@@ -369,42 +370,6 @@ iframe {
 .img-about {
   width: 300px;
   height: auto;
-}
-
-.footer {
-  width: 100%;
-  padding: 10px 0px;
-  background-color: #414141;
-  position: absolute;
-  bottom: 0;
-}
-
-.footer ul {
-  display: flex;
-  justify-content: center;
-}
-
-.footer a i {
-  font-size: 2rem;
-  text-decoration: none;
-  color: black;
-  padding: 10px;
-  background-color: white;
-  margin: 10px;
-  border-radius: 50%;
-}
-
-.footer li {
-  list-style: none;
-}
-
-.footer p {
-  text-align: center;
-}
-
-.footer p a {
-  text-decoration: none;
-  color: white;
 }
 
 footer {
@@ -608,13 +573,11 @@ footer p a {
     width: 18rem;
   }
 
-  footer a i,
-  .footer a i {
+  footer a i {
     font-size: 1rem;
   }
 
-  footer p a,
-  .footer p a {
+  footer p a {
     font-size: 10px;
   }
 }
