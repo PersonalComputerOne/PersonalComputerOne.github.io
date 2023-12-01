@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Noto+Sans+JP:wght@400;500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
+
+header {
+  background-image: url("home/bleach-tybw.gif");
+  color: rgb(255, 255, 255);
+  text-align: center;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  padding: 50px;
+}
+
+body {
+  background-image: url("home/Bleach50.png");
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 10;
+  z-index: 100;
+}
+
+#B-logo {
+  width: 40px;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -1px;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  font-family: "Merriweather";
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+nav li:first-child {
+  margin-right: auto;
+}
+
+nav li a img {
+  width: 40px;
+  margin-left: 5px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.404);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+.menu-button {
+  display: none;
+}
+
+.slides {
+  width: auto;
+  height: 100vh;
+  overflow: auto;
+}
+
+.btn {
+    margin-top: 100px;
+}
+
+@media (max-width: 777px) {
+  .hideOnMobile {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  #B-logo {
+    margin: -20px;
+  }
+
+  #A-logo {
+    width: 300px;
+  }
+
+  #mv {
+    width: 18rem;
+  }
+}
