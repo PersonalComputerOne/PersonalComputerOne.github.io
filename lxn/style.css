@@ -9,7 +9,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 10rem;
+    scroll-padding-top: 57px;
 }
 
 body {
@@ -30,7 +30,7 @@ header {
 
 #siya {
     font-family: serif;
-    font-size: 10rem;
+    font-size: 7rem;
     color: #ffffff;
     text-shadow: 5px 5px 5px rgb(169, 169, 169);
     box-shadow: 0 0 1rem rgb(169, 169, 169);
@@ -362,9 +362,17 @@ div.gallery ul li img:hover {
 
 
 @media only screen and (max-width: 1169px) {
-	div.gallery ul {
-		grid-template-columns: repeat(2, 1fr);
-	}
+    html {
+    	scroll-padding-top: 10rem;
+    }
+
+    #siya {
+	font-size: 10rem;
+    }
+	
+    div.gallery ul {
+	grid-template-columns: repeat(2, 1fr);
+    }
 
     div.gallery ul li img {
         width: 280px;
