@@ -410,10 +410,6 @@ div.gallery ul li img:hover {
         padding: 0;
     }
     
-    #siya {
-        font-size: 5rem;
-    }
-    
 }
 
 @media(max-width: 768px) {
