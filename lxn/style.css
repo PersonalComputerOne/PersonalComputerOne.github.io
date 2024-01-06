@@ -299,13 +299,13 @@ div.gallery ul li img:hover {
 
 #p-g {
     background-image: linear-gradient( #ffffff, #e0e0e0);
-    padding: 2rem;
+    padding: 4rem;
     border: none;
 }
 
 #g-f {
     background-image: linear-gradient( #e0e0e0, #888888);
-    padding: 2rem;
+    padding: 4rem;
     border: none;
 }
 
@@ -363,7 +363,7 @@ div.gallery ul li img:hover {
 
 @media only screen and (max-width: 1169px) {
     html {
-    	scroll-padding-top: 10rem;
+    	scroll-padding-top: 14rem;
     }
 
     #siya {
