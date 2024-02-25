@@ -1,0 +1,321 @@
+/* styles.css */
+
+@keyframes glowing {
+    0% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #07132B, 0 0 70px #07132B, 0 0 80px #07132B, 0 0 100px #07132B, 0 0 150px #07132B; }
+    50% { text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #07132B, 0 0 80px #07132B, 0 0 90px #07132B, 0 0 110px #07132B, 0 0 170px #07132B; }
+    100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #07132B, 0 0 70px #07132B, 0 0 80px #07132B, 0 0 100px #07132B, 0 0 150px #07132B; }
+}
+.glow {
+    filter: drop-shadow(0 0 10px rgb(255, 255, 255)); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+.overlay {
+    position: absolute;
+    top: 315px;
+    left: 400px;
+    width: 60%;
+    height: 30%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 120px;
+    background: rgba(0, 0, 0, 0.247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    
+}
+
+.brand {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #07132B;
+}
+
+nav a.active {
+    color: #07132B; 
+    font-weight: bold; 
+    animation: glowing 1.5s infinite; 
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #63100E;
+    font-size: 100px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.teemo {
+    position: absolute;
+    font-size: 60%;
+    top: 31%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+
+.Nothingness {
+    position: absolute;
+     top: 31%;
+    left: 69%;
+    transform: translate(-50%, -50%);
+    ext-align: center;
+    
+        }
+    .nothing {
+        font-size: 60%; /* Adjust the size as needed */
+    }
+        
+
+.text-box{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+    }
+    .text-box p{
+    font-size: 50px;
+    font-weight: 600;
+    }
+    .text-box h1{
+    font-size: 190px;
+    line-height: 160px;
+    margin-left: -10px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+    }
+    @keyframes back{
+        100%{
+        background-position: 2000px 0;
+        }
+    }
+    .right {
+        position: absolute;
+        top: 67%; 
+        right: 21%; 
+        transform: translateY(-50%);
+    }
+    
+    .right1 {
+        font-size: 15px; 
+        
+    }
+    .left {
+        position: absolute;
+        top: 67%; 
+        left: 26%; 
+        transform: translateY(-50%);
+    }
+    
+    .left1 {
+        font-size: 40px; 
+        letter-spacing: 6px;
+    }
+   /*CONTACTS*/
+   .contact {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+/*About me*/
+
+#aboutme {
+    position: relative;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.pic1 {
+    position: absolute;
+    top: 20px; 
+    left: 8.5%;
+    text-align: center; 
+}
+
+.pic1 p {
+    margin-bottom: 10px;
+    color: #63100E;
+}
+.logo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    border: 1px solid #63100E; 
+    padding: 2px; 
+    display: inline-block; 
+    background-color: #63100E;
+    border-radius: 5px; 
+    transform: translate(-50%, -50%); 
+}
+
+.logo img {
+    width: 200px; 
+    height: auto;
+    transition: filter 0.3s;
+}
+
+
+
+.intro {
+    border: 10px solid #63100E;
+    background-color: white;
+    color: #07132B;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.logo img {
+    width: 100px;
+    height: auto;
+    transition: filter 0.3s;
+}
+
+.logo img:hover {
+    filter: brightness(120%);
+    transform: scale(1.2);
+}
+/*BACKGROUND*/
+#background {
+    text-align: center;
+    padding-top: 20px;
+    
+    height: 400px;
+    width: 100%;
+    position: relative; 
+}
+
+#background h5 {
+    margin: 0;
+    font-size: 30px; 
+    position: absolute; 
+    top: 25%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.school {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px; 
+}
+.school div {
+    position: relative;
+}
+
+.school img {
+    height: 300px; 
+    width: auto; 
+    transition: transform 0.5s, height 0.3s;
+}
+
+.school div:hover img {
+    height: 250px; 
+    transform: scale(1.1); 
+}
+
+.school a {
+    text-decoration: none; 
+    color: inherit; 
+}
+.info {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #07132B;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: opacity 0.3s; 
+    opacity: 0; 
+    font-size: 16px;
+}
+
+.school div:hover .info {
+    display: block; 
+    opacity: 1; 
+}
+/*GALLERY*/
+
+#gallery {
+    background-color: #63100E;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+}
+
+.gallery-item img {
+    width: 500px; 
+    height: 500px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
