@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Resume</title>
 </head>
 <body>
     <div class="wrapper">
+
+        <nav>
+        <ul id="top" class="top">
+            <a href="#" class="logo">Hello.</a>
+            <div class="show">
+                <li><a href="#" onclick="highlight(this)">Home</a></li>
+                <li><a href="#about" onclick="highlight(this)">About</a></li>
+                <li><a href="#skill" onclick="highlight(this)">Skill</a></li>
+                <li><a href="#education" onclick="highlight(this)">Education</a></li>
+                <li><a href="#objective" onclick="highlight(this)">Objective</a></li>
+                <li><a href="#contact" onclick="highlight(this)">Contact</a></li>
+            </div>
+        </ul>
+    </nav>
+        
         <div class="left">
 
             <div class="name-hero">
@@ -29,46 +44,180 @@
         </div>
 
         <div class="right">
-            <header>
-                <a href="#" class="logo">Hello.</a>
-                <input type="checkbox" id="menuToggle" class="menu-toggle">
-                <label for="menuToggle" class="menu-icon">
-                    <div class="vl">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </label>
-                <nav>
-                    <ul>
-                        <div class="name-villian">
 
-                            <div class="I-img"><img src="karuta.png" alt="profile picture"></div>
-            
-                            <div class="name-context">
-                                <h1>John Marvin Ramos</h1>
-                                <p>Bachelor of Science in Computer Science <br> (TSU)</p>
-                                <hr>
+                <header>
+                    <a href="#" class="logo">Hello.</a>
+                    <input type="checkbox" id="menuToggle" class="menu-toggle">
+                    <label for="menuToggle" class="menu-icon">
+                        <div class="vl">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </label>
+                    <nav>
+                        <ul>
+                            <div class="name-villian">
+
+                                <div class="I-img"><img src="karuta.png" alt="profile picture"></div>
+                
+                                <div class="name-context">
+                                    <h1>John Marvin Ramos</h1>
+                                    <p>Bachelor of Science in Computer Science <br> (TSU)</p>
+                                    <hr>
+                                </div>
+                
                             </div>
-            
+
+                            <li><a href="#" onclick="highlight(this)">Home</a></li>
+                            <li><a href="#about" onclick="highlight(this)">About</a></li>
+                            <li><a href="#skill" onclick="highlight(this)">Skill</a></li>
+                            <li><a href="#education" onclick="highlight(this)">Education</a></li>
+                            <li><a href="#objective" onclick="highlight(this)">Objective</a></li>
+                            <li><a href="#contact" onclick="highlight(this)">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div id="#" class="hello section">
+                    <div class="introduction">
+                        <h1>Hello.</h1>
+                        <h2>My name is John Marvin</h2>
+                        <p>and I am a 4th year computer science student of TSU</p>
+                    </div>
+
+                    <div class="myself-img"><img id="my-pic" src="karuta.png" alt="profile picture"></div>
+                </div>
+
+                <div id="about" class="about section">
+                    <h1>About Me</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero qui esse sit. Iusto harum aliquid asperiores cumque incidunt quia at ab id maxime, dolorem exercitationem! Aliquam numquam ratione quas esse.</p>
+                    <br>
+                    <pre id="pp"><strong>PERSONAL DATA:</strong>
+                        
+Age                   :          18
+Date of Birth         :          December 18 2002
+Place of Birth        :          Florida Blanca Pampanga
+Height                :          5’8”
+Weight                :          60 kg
+Religion              :          Roman Catholic Christian
+Civil Status          :          Single
+Citizenship           :          Filipino
+Name of Father        :          Marvin E. Ramos
+Occupation            :          Tricycle Driver
+Name of Mother        :          Hilda M. Ramos
+Occupation            :          Housewife
+</pre>
+                </div>
+
+                <div id="skill" class="skill section">
+                    <h1>My Skills</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias sunt necessitatibus, blanditiis velit aliquid soluta dolorum omnis eum corrupti error maiores quo quod quibusdam culpa ipsum eaque repellendus iure repudiandae?</p>
+                    <div class="professional-L">
+
+                        <br>
+
+                        <div class="level">
+                            <h3>PROFESSIONAL SKILLS</h3>
+                            <h4 class="java">Java 30%<hr></h4>
+                            <h4 class="python">Python 40%<hr></h4>
+                            <h4 class="html">Html 75%<hr></h4>
+                            <h4 class="css">Css 50%<hr></h4>
                         </div>
 
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Skill</a></li>
-                        <li><a href="#">Education</a></li>
-                        <li><a href="#">Objective</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            
-        </div>
-        
+                    </div>
 
+                    <br>
+
+                    <div class="programming-L">
+                        <h3>LANGUAGE SKILLS</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nesciunt optio maiores esse! Maiores quisquam est deleniti vitae distinctio vero quibusdam aut itaque blanditiis! Consectetur nobis culpa ipsa delectus dolor!</p>
+                        <div class="circle-container">
+                            <div class="circle">
+                                <strong>ENGLISH</strong>
+                                <div class="skill-circle english"><span>60%</span></div>
+                            </div>
+                            <div class="circle">
+                                <strong>FILIPINO</strong>
+                                <div class="skill-circle filipino"><span>100%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="education" class="education section">
+                    <h1>Education</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam cupiditate sapiente eius dolorem fugit modi velit culpa fugiat atque aspernatur, autem, dolores mollitia, eos eum aliquid sint dolor quod! Nemo.</p>
+                    <br>
+                    <pre id="qq"><strong>EDUCATION BACKGROUND:</strong>
+
+Tarlac State University
+Bachelor of Science in Computer Science
+4rd year College
+S.Y. 2024 - 2025
+
+Information Communication Technology
+Grade 12 Senior High School
+Asian Institute of Computer Studies
+JRCDJC Bldg. Juan Luna Street Tarlac City
+S.Y. 2019 – 2021
+
+Sto. Cristo Integrated School
+Tarlac City
+S.Y. 2015 – 2019
+
+Tarlac West Central Elementary School
+Tarlac City
+S.Y. 2009 – 2015</pre>
+
+                </div>
+
+                <div id="objective" class="objective section">
+                    <h1>Objective</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi doloribus tempora fugiat, assumenda ex adipisci ipsum quae voluptates illum quis quaerat ullam officiis accusamus delectus sit eveniet similique eligendi.
+                    Sunt est minus illo quidem, nam possimus, itaque officiis blanditiis deleniti debitis assumenda veritatis, iure nobis dicta non voluptatibus dolorum ex esse. Hic debitis sapiente iste quae, facilis eos ab?
+                    Nihil a tempora vero earum blanditiis officiis, quos, iusto nesciunt laborum magni numquam harum nemo inventore modi! Non ratione, ipsum libero ea reiciendis atque aspernatur perferendis amet, ipsa recusandae fuga!
+                    Exercitationem iusto optio culpa maiores vero delectus quibusdam rem est veniam nam, aliquam laboriosam quasi eaque vel impedit eveniet quidem natus. Velit voluptates aliquam ab hic minus libero ipsum ipsa!</p>
+
+                </div>
+
+                <div id="contact" class="contact section">
+                    <h1>Contact</h1>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quibusdam iste voluptas rerum, animi nesciunt porro quam quis minus ratione, culpa in. Veniam voluptates, soluta at iste eos ab assumenda!</p>
+                    
+                    <p class="info"><strong>PHONE</strong><br><br>Mobile number: 09206984385</p>
+                    <p class="info"><strong>EMAIL</strong><br><br>johnmarvinramos18@gmail.com <br>jm.ramos00569@student.tsu.edu.ph</p>
+                    <p class="info"><strong>ADDRESS</strong><br><br>Sitio Paninaan Brgy. Carangian Tarlac City, Philippines</p>
+                </div>
+                
+            </div>
+        
         </div>
 
     </div>
+
+    <script>window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("top").style.top = "0";
+          } else {
+            document.getElementById("top").style.top = "-60px";
+          }
+        }
+        function highlight(link) {
+            var links = document.querySelectorAll('nav a');
+            links.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            link.classList.add('active');
+        }
+    </script>
     
 </body>
 </html>
