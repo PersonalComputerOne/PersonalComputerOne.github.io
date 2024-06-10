@@ -11,7 +11,7 @@ html{
 body{
     -webkit-font-smoothing:antialiased;
     color:#333332;
-    font-family:Lora, serif;
+    font-family: "Roboto", sans-serif;
     font-size:18px;
     font-weight:400;
     line-height:1.4;
@@ -67,7 +67,7 @@ img {
 }
 
 .me-img{
-    margin:0 auto;
+    margin:0 auto -5px;
     width:200px;
 }
   
@@ -89,6 +89,10 @@ img {
     line-height:1.5;
     margin:0 8px 0 0;
     text-align:center;
+}
+
+.name-hero h5 {
+    font-weight: 500;
 }
 
 header {
@@ -113,6 +117,10 @@ header {
 
 .menu-toggle {
     display: none;
+}
+
+.name-context p {
+    font-size: small;
 }
 
 .name-villain,.I-img,.name-context {
@@ -150,7 +158,7 @@ ul {
 ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding: 15.5px 15px;
+    padding: 16px 15px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
 }
 
@@ -188,21 +196,11 @@ ul li a.active {
 }
 
 .section p {
-    text-align: start;
-}
-
-.hello {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.introduction {
-    flex: 1;
+    text-align: justify;
 }
 
 .myself-img {
-    flex: 0 0 auto;
+    float: right;
 }
 
 #my-pic {
@@ -237,12 +235,12 @@ ul li a.active {
 }
 
 .java hr {
-    width: 30%;
+    width: 40%;
     background-color: #ab47bc;
 }
 
 .python hr {
-    width: 40%;
+    width: 50%;
     background-color: #26a69a;
 }
 
@@ -252,7 +250,7 @@ ul li a.active {
 }
 
 .css hr {
-    width: 50%;
+    width: 60%;
     background-color: #2196f3;
 }
 
@@ -285,7 +283,7 @@ ul li a.active {
 }
 
 .english {
-    --percentage: 60%;
+    --percentage: 70%;
 }
 
 .filipino {
@@ -330,6 +328,40 @@ footer {
     font-size: 2.5rem;
     margin-left: 10px;
     color: #2196f3;
+}
+
+.award {
+    margin: 40px 10%;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.082);
+    text-align: center;
+}
+
+.award h4 {
+    font-weight: 500;
+}
+
+.project {
+    margin: 40px 10%;
+    padding: 30px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.082);
+}
+
+.project a {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: 0.1px rgb(196, 196, 196) solid;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project a:hover {
+    color: white;
+    background-color: #2196f3;
 }
 
 @media screen and (max-width: 1234px) {
@@ -393,8 +425,8 @@ footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 40px;
-        width: 150px;
+        margin-top: 100px;
+        width: 100px;
     }
 
     .name-context {
@@ -466,7 +498,7 @@ footer {
     }
 
     span:nth-of-type(3) {
-        width: 40%;
+        width: 50%;
     }
 
     input[type="checkbox"] {
@@ -518,13 +550,20 @@ footer {
     #qq {
         font-size: medium;
     }
+
 }
 
-@media (max-width: 666px) { 
+@media (max-width: 720px) {
     .myself-img {
         display: none;
     }
 
+    .tsu h1, .tsu h2, .tsu p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 666px) { 
     #pp {
         font-size: x-small;
         font-weight: bold;
@@ -564,6 +603,10 @@ footer {
         font-size: 1.5rem;
     }
 
+    .tsu h1 {
+        font-size: 3rem;
+    }
+
     .section p {
         font-size: small;
     }
@@ -574,6 +617,10 @@ footer {
 
     .icons i {
         font-size: 1.5rem;
+    }
+
+    .award h4 {
+        font-size: small;
     }
 
 }
@@ -608,6 +655,11 @@ footer {
     #credit {
         font-size: 12px;
     }
+
+    .award h4 {
+        font-size: x-small;
+    }
+
 }
 
 @media (max-width: 360px) {
@@ -617,5 +669,9 @@ footer {
 
     #pp {
         margin: 0 0;
+    }
+
+    .project p {
+        font-size: 0.7rem;
     }
 }
