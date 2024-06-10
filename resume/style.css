@@ -341,10 +341,36 @@ footer {
     font-weight: 500;
 }
 
+#jh h3, #st {
+    color: #ef5350;
+}
+
+#sh h3, #nd {
+    color: #26a69a;
+}
+
+#c h3, #rd {
+    color:  #2195f3;
+}
+
 .project {
-    margin: 40px 10%;
+    margin: 1rem;
     padding: 30px;
     box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.082);
+    width: 90%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.flex {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+}
+
+.project pre {
+    font-size: medium;
+    font-family: "Roboto", sans-serif;
 }
 
 .project a {
@@ -551,6 +577,15 @@ footer {
         font-size: medium;
     }
 
+    .project {
+        scroll-snap-align: center;
+    }
+    
+    .flex {
+        scroll-snap-type: x mandatory;
+    }
+    
+
 }
 
 @media (max-width: 720px) {
@@ -623,6 +658,10 @@ footer {
         font-size: small;
     }
 
+    .project pre {
+        font-size: small;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -660,6 +699,12 @@ footer {
         font-size: x-small;
     }
 
+}
+
+@media (max-width: 380px) {
+    .project h4 {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 360px) {
