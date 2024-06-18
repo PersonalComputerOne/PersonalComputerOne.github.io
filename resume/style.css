@@ -245,13 +245,18 @@ ul li a.active {
 }
 
 .html hr {
-    width: 75%;
+    width: 100%;
     background-color: #ef5350;
 }
 
 .css hr {
-    width: 60%;
+    width: 70%;
     background-color: #2196f3;
+}
+
+.js hr {
+    width: 25%;
+    background-color: #3f51b5;
 }
 
 .circle-container {
