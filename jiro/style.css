@@ -94,15 +94,43 @@
 
 @media (max-width: 600px) {
   #photos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 10px;
+    justify-items: center;
   }
 
   #photos img {
     width: 90%;
     max-width: 300px;
+  }
+
+  #photos img:nth-child(1) {
+    order: 1;
+  }
+  #photos img:nth-child(4) {
+    order: 2;
+  }
+  #photos img:nth-child(7) {
+    order: 3;
+  }
+  #photos img:nth-child(2) {
+    order: 4;
+  }
+  #photos img:nth-child(5) {
+    order: 5;
+  }
+  #photos img:nth-child(8) {
+    order: 6;
+  }
+  #photos img:nth-child(3) {
+    order: 7;
+  }
+  #photos img:nth-child(6) {
+    order: 8;
+  }
+  #photos img:nth-child(9) {
+    order: 9;
   }
 }
 
