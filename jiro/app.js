@@ -1,5 +1,5 @@
 const poemLines = [
-  "When I close my eyes, you're all I see",
+  "When I close my eyes, you're all I see,",
   "In dreams, your presence wraps around me.",
   "Even when nightmares dare to intervene,",
   "I find comfort in knowing you're in the scene.",
