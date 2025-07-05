@@ -14,21 +14,20 @@
     
     <div id="flowers">
         <section id="photos">
-            <img src="pics/Daisy on Black Fine Art Black and White Photography Flower - Etsy.jpg" onclick="openModal(this, `When I close my eyes, you're all I see,`)" style="order: 1;">
-            <img src="pics/Products.jpg" onclick="openModal(this, `I find comfort in knowing you're in the scene.`)" style="order: 4;">        
-            <img src="pics/GUILLERMO ÁLVAREZ.jpg" onclick="openModal(this, `I may not feel, I may not sense the real,`)" style="order: 7;">
-            <img src="pics/download (3).jpg" onclick="openModal(this, `In dreams, your presence wraps around me.`)" style="order: 2;">
-            <img src="pics/soulhearts.jpg" onclick="openModal(this, `You're my fear, my midnight fright,`)" style="order: 5;">
-            <img src="pics/shinjiaratani.jpg" onclick="openModal(this, `But love won't overshadow what dreams reveal.`)" style="order: 8;">
-            <img src="pics/Pin de Gardengirl en Fondo Negro _ Rosas negras, Fondos de pantalla de iphone, Flores negras.jpg" onclick="openModal(this, `Even when nightmares dare to intervene,`)" style="order: 3;">
-            <img src="pics/photo.jpg" onclick="openModal(this, `Yet, in my mind, you dance in the moonlight.`)" style="order: 6;">
-            <img src="pics/dgfd.jpg" onclick="openModal(this, `Midnight Fright`)" style="order: 9;">
+            <img src="pics/Daisy on Black Fine Art Black and White Photography Flower - Etsy.jpg" onclick="openModal(this)" style="order: 1;">
+            <img src="pics/Products.jpg" onclick="openModal(this)" style="order: 4;">        
+            <img src="pics/GUILLERMO ÁLVAREZ.jpg" onclick="openModal(this)" style="order: 7;">
+            <img src="pics/download (3).jpg" onclick="openModal(this)" style="order: 2;">
+            <img src="pics/soulhearts.jpg" onclick="openModal(this)" style="order: 5;">
+            <img src="pics/shinjiaratani.jpg" onclick="openModal(this)" style="order: 8;">
+            <img src="pics/Pin de Gardengirl en Fondo Negro _ Rosas negras, Fondos de pantalla de iphone, Flores negras.jpg" onclick="openModal(this)" style="order: 3;">
+            <img src="pics/photo.jpg" onclick="openModal(this)" style="order: 6;">
+            <img src="pics/dgfd.jpg" onclick="openModal(this)" style="order: 9;">
         </section>
     </div>
     
-    <div id="modal" class="modal" onclick="closeModal()">
-        <span class="close">&times;</span>
-        <img id="modalImg">
+    <div id="modal" class="modal">
+        <img id="modalImg" onclick="closeModal()">
         <p id="poem" class="poem"></p>
     </div>
     
