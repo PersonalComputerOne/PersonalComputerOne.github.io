@@ -1,194 +1,535 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <title>Contact</title>
+  <head>
+    <title>Contact — Bleach</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Pro:ital,wght@0,300;0,400;1,300;1,400&family=JetBrains+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    
-</head>
-<body>
-  <header></header>
-    <nav>
-        <ul class="sidebar">
-          <li onclick="hideSidebar()">
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                /></svg
-            ></a>
-          </li>
-          <li>
-            <a href="index.html#home"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"
-                /></svg
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="index.html#playlist"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M640-160q-50 0-85-35t-35-85q0-50 35-85t85-35q11 0 21 1.5t19 6.5v-328h200v80H760v360q0 50-35 85t-85 35ZM120-320v-80h320v80H120Zm0-160v-80h480v80H120Zm0-160v-80h480v80H120Z"
-                /></svg
-              >Playlist</a
-            >
-          </li>
-          <li>
-            <a href="index.html#movies"
-              ><svg 
-              xmlns="http://www.w3.org/2000/svg" 
-              height="24" 
-              viewBox="0 -960 960 960" 
-              width="24"
-              
-            >
-              <path d="m160-800 80 160h120l-80-160h80l80 160h120l-80-160h80l80 160h120l-80-160h120q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800Zm0 240v320h640v-320H160Zm0 0v320-320Z"
-              /></svg
-            >Movies</a
-            >
-          </li>
-          <li>
-            <a href="index.html#bankai"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M762-96 645-212l-88 88-28-28q-23-23-23-57t23-57l169-169q23-23 57-23t57 23l28 28-88 88 116 117q12 12 12 28t-12 28l-50 50q-12 12-28 12t-28-12Zm118-628L426-270l5 4q23 23 23 57t-23 57l-28 28-88-88L198-96q-12 12-28 12t-28-12l-50-50q-12-12-12-28t12-28l116-117-88-88 28-28q23-23 57-23t57 23l4 5 454-454h160v160ZM334-583l24-23 23-24-23 24-24 23Zm-56 57L80-724v-160h160l198 198-57 56-174-174h-47v47l174 174-56 57Zm92 199 430-430v-47h-47L323-374l47 47Zm0 0-24-23-23-24 23 24 24 23Z"
-                /></svg
-              >Bankai</a
-            >
-          </li>
-          <li>
-            <a href="index.html#about"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                /></svg
-              >About</a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
-                /></svg
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="home/thanks.html"
-              >
-              <img src="home/paps.png" alt="bleach-logo" id="B-logo"
-            /></a>
-          </li>
-          <li class="hideOnMobile"><a href="index.html#home">Home</a></li>
-          <li class="hideOnMobile"><a href="index.html#playlist">Playlist</a></li>
-          <li class="hideOnMobile"><a href="index.html#movies">Movies</a></li>
-          <li class="hideOnMobile"><a href="index.html#bankai">Bankai</a></li>
-          <li class="hideOnMobile"><a href="index.html#about">About</a></li>
-          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
-          <li class="menu-button" onclick="showSidebar()">
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="24"
-                viewBox="0 -960 960 960"
-                width="24"
-              >
-                <path
-                  d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-                /></svg
-            ></a>
-          </li>
-        </ul>
+    <style>
+      /* ── Contact-page-specific styles ── */
+      .contact-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-hero {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8rem 6vw 6rem;
+        overflow: hidden;
+      }
+
+      /* Aizen gif — decorative background */
+      .contact-hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        pointer-events: none;
+      }
+
+      .contact-hero-bg img {
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        object-position: right bottom;
+        opacity: 0.12;
+        filter: grayscale(30%);
+      }
+
+      .contact-hero-bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(to right, var(--dark) 30%, transparent 80%),
+          linear-gradient(to top, var(--dark) 0%, transparent 30%);
+      }
+
+      /* Main layout */
+      .contact-layout {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        width: 100%;
+        max-width: 1100px;
+        align-items: center;
+      }
+
+      .contact-intro .section-label {
+        margin-top: 0.75rem;
+      }
+
+      .contact-title {
+        font-family: var(--font-display);
+        font-size: clamp(3.5rem, 10vw, 7rem);
+        letter-spacing: 6px;
+        color: var(--text);
+        line-height: 0.9;
+        margin-bottom: 1.5rem;
+      }
+
+      .contact-desc {
+        font-family: var(--font-body);
+        font-style: italic;
+        font-size: 1.1rem;
+        color: var(--text-dim);
+        line-height: 1.8;
+        margin-bottom: 2.5rem;
+      }
+
+      .contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .contact-detail-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .detail-dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--red);
+        flex-shrink: 0;
+      }
+
+      .detail-text {
+        font-family: var(--font-mono);
+        font-size: 0.7rem;
+        font-weight: 300;
+        letter-spacing: 1.5px;
+        color: var(--text-muted);
+      }
+
+      /* Right — form */
+      .contact-form-wrap {
+        background: var(--dark-3);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 2.5rem;
+      }
+
+      .form-heading {
+        font-family: var(--font-display);
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+      }
+
+      .form-subheading {
+        font-family: var(--font-body);
+        font-style: italic;
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        margin-bottom: 1.75rem;
+        line-height: 1.6;
+      }
+
+      .form-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .form-label {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: var(--text-muted);
+      }
+
+      .form-input {
+        background: var(--dark-2);
+        border: 1px solid var(--border);
+        border-radius: 7px;
+        padding: 11px 16px;
+        font-family: var(--font-body);
+        font-size: 1rem;
+        color: var(--text);
+        outline: none;
+        transition:
+          border-color 0.2s,
+          box-shadow 0.2s;
+        width: 100%;
+      }
+
+      .form-input::placeholder {
+        color: var(--text-muted);
+        font-style: italic;
+      }
+
+      .form-input:focus {
+        border-color: var(--border-red);
+        box-shadow: 0 0 0 3px rgba(179, 0, 0, 0.12);
+      }
+
+      .form-divider {
+        height: 1px;
+        background: var(--border);
+        margin: 8px 0;
+      }
+
+      .form-submit {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .submit-note {
+        font-family: var(--font-mono);
+        font-size: 0.6rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      .btn-send {
+        flex-shrink: 0;
+        font-family: var(--font-display);
+        font-size: 0.85rem;
+        letter-spacing: 3px;
+        background: var(--red);
+        color: #fff;
+        padding: 12px 28px;
+        border-radius: 6px;
+        border: 1px solid var(--red);
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+
+      .btn-send:hover {
+        background: #d40000;
+        box-shadow: 0 6px 20px rgba(179, 0, 0, 0.4);
+        transform: translateY(-1px);
+      }
+
+      .btn-send:active {
+        transform: translateY(0);
+      }
+
+      /* ── Responsive ── */
+      @media (max-width: 820px) {
+        .contact-layout {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .contact-intro {
+          text-align: center;
+        }
+
+        .contact-intro .section-label {
+          justify-content: center;
+        }
+
+        .contact-details {
+          align-items: center;
+        }
+
+        .contact-hero {
+          padding: 7rem 1.5rem 4rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .contact-form-wrap {
+          padding: 1.75rem 1.25rem;
+        }
+
+        .form-submit {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .btn-send {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- TYBW BANNER -->
+    <div class="tybw-banner">
+      <img
+        src="home/bleach-tybw.gif"
+        alt="Bleach: Thousand-Year Blood War"
+        class="tybw-gif"
+      />
+      <div class="tybw-overlay">
+        <span class="tybw-text">Now Streaming — Thousand-Year Blood War</span>
+      </div>
+    </div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <button
+        class="sidebar-close"
+        onclick="hideSidebar()"
+        aria-label="Close menu"
+      >
+        <img src="svg/close_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+      </button>
+      <nav class="sidebar-nav">
+        <div class="sidebar-logo">
+          <img src="home/logo1.png" alt="Bleach" />
+        </div>
+        <a href="index.html#home" class="sidebar-link" onclick="hideSidebar()"
+          ><img src="svg/home_FILL0_wght400_GRAD0_opsz24.svg" alt="" />Home</a
+        >
+        <a
+          href="index.html#playlist"
+          class="sidebar-link"
+          onclick="hideSidebar()"
+          ><img
+            src="svg/queue_music_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />Playlist</a
+        >
+        <a href="index.html#movies" class="sidebar-link" onclick="hideSidebar()"
+          ><img
+            src="svg/movie_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />Movies</a
+        >
+        <a href="index.html#bankai" class="sidebar-link" onclick="hideSidebar()"
+          ><img
+            src="svg/swords_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />Bankai</a
+        >
+        <a href="index.html#about" class="sidebar-link" onclick="hideSidebar()"
+          ><img src="svg/help_FILL0_wght400_GRAD0_opsz24.svg" alt="" />About</a
+        >
+        <a
+          href="contact.html"
+          class="sidebar-link"
+          style="
+            color: var(--red);
+            border-color: var(--border-red);
+            background: rgba(179, 0, 0, 0.08);
+          "
+          ><img
+            src="svg/mail_FILL0_wght400_GRAD0_opsz24.svg"
+            alt=""
+          />Contact</a
+        >
       </nav>
-    
-      <div id="contact" class="contact">
-        <div class="contact-box">
-          <h2>CONTACT</h2>
-          <form>
-            <h5>Send us your favorite bleach-ost, character, and their bankai!</h5>
-            <input type="text" class="input-field" placeholder=" Name" />
-            <input type="text" class="input-field" placeholder=" Bankai" />
-            <input type="text" class="input-field" placeholder=" Bleach-OST" />
-            <button type="button" class="btn">Send Message</button>
-          </form>
+    </aside>
+    <div
+      class="sidebar-overlay"
+      id="sidebarOverlay"
+      onclick="hideSidebar()"
+    ></div>
+
+    <!-- NAV -->
+    <nav class="topnav" id="topnav">
+      <div class="nav-logo">
+        <img src="home/paps.png" alt="Bleach logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#playlist">Playlist</a></li>
+        <li><a href="index.html#movies">Movies</a></li>
+        <li><a href="index.html#bankai">Bankai</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button
+        class="nav-hamburger"
+        onclick="showSidebar()"
+        aria-label="Open menu"
+      >
+        <img src="svg/menu_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+      </button>
+    </nav>
+
+    <!-- CONTACT -->
+    <main class="contact-page">
+      <div class="contact-hero">
+        <!-- Aizen bg -->
+        <div class="contact-hero-bg">
+          <img src="home/aizen-gif.gif" alt="" />
         </div>
 
-        <img src="home/aizen-gif.gif" alt="GIF" class="img-about" />
+        <div class="contact-layout">
+          <!-- Left -->
+          <div class="contact-intro">
+            <div class="section-label">
+              <span class="label-line"></span>
+              <span class="label-text">Get in Touch</span>
+            </div>
+            <h1 class="contact-title">CONTACT</h1>
+            <p class="contact-desc">
+              Share your favorite OST track, your go-to Soul Reaper, and the
+              Bankai that gives you chills.
+            </p>
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <span class="detail-dot"></span>
+                <span class="detail-text">All submissions welcomed</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-dot"></span>
+                <span class="detail-text">Bleach fans only 🗡️</span>
+              </div>
+              <div class="contact-detail-item">
+                <span class="detail-dot"></span>
+                <span class="detail-text">Design by PC1 · 2023</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right — form -->
+          <div class="contact-form-wrap">
+            <p class="form-heading">Send a Message</p>
+            <p class="form-subheading">
+              Your favorite character, their Bankai, and the OST that defines
+              them.
+            </p>
+
+            <div class="form-fields">
+              <div class="form-field">
+                <label class="form-label" for="f-name">Your Name</label>
+                <input
+                  id="f-name"
+                  class="form-input"
+                  type="text"
+                  placeholder="e.g. Kurosaki Ichigo"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="f-bankai">Favorite Bankai</label>
+                <input
+                  id="f-bankai"
+                  class="form-input"
+                  type="text"
+                  placeholder="e.g. Tensa Zangetsu"
+                />
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="f-ost">Favorite OST</label>
+                <input
+                  id="f-ost"
+                  class="form-input"
+                  type="text"
+                  placeholder="e.g. Number One Bankai"
+                />
+              </div>
+
+              <div class="form-divider"></div>
+
+              <div class="form-submit">
+                <p class="submit-note">
+                  No spam, no Hollows —<br />just Soul Reaper energy.
+                </p>
+                <button type="button" class="btn-send" onclick="handleSend()">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <footer>
-        <ul>
-          <li>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <div class="footer-left">
+            <img src="home/paps.png" alt="Bleach" class="footer-logo" />
+            <span class="footer-tagline">Soul Reaper Archives</span>
+          </div>
+          <div class="footer-socials">
             <a
               href="https://www.facebook.com/JohnMarvinRamos.18"
               target="_blank"
+              aria-label="Facebook"
               ><i class="fa-brands fa-facebook"></i
             ></a>
-          </li>
-          <li>
             <a
               href="https://www.instagram.com/personalcomputerone"
               target="_blank"
+              aria-label="Instagram"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-          </li>
-          <li>
-            <a href="https://github.com/PersonalComputerOne" target="_blank"
+            <a
+              href="https://github.com/PersonalComputerOne"
+              target="_blank"
+              aria-label="GitHub"
               ><i class="fa-brands fa-github"></i
             ></a>
-          </li>
-        </ul>
-
-        <p>
-          <a href="home/resume/resume.html" target="_blank"
-            >Copyright &copy; 2023; Design by PC1</a
-          >
-        </p>
+          </div>
+          <p class="footer-copy">
+            <a href="home/resume/resume.html" target="_blank"
+              >Copyright &copy; 2023 — Design by PC1</a
+            >
+          </p>
+        </div>
       </footer>
-    </div>
-    <script src="script.js"></script>
+    </main>
 
-    
-</body>
+    <script src="script.js"></script>
+    <script>
+      function handleSend() {
+        const name = document.getElementById("f-name").value.trim();
+        const bankai = document.getElementById("f-bankai").value.trim();
+        const ost = document.getElementById("f-ost").value.trim();
+        if (!name || !bankai || !ost) {
+          const btn = document.querySelector(".btn-send");
+          btn.textContent = "Fill all fields";
+          btn.style.background = "#4a0000";
+          setTimeout(() => {
+            btn.textContent = "Send";
+            btn.style.background = "";
+          }, 2000);
+          return;
+        }
+        const btn = document.querySelector(".btn-send");
+        btn.textContent = "Sent ✓";
+        btn.style.background = "#1a4a1a";
+        btn.disabled = true;
+      }
+
+      window.addEventListener("scroll", () => {
+        document
+          .getElementById("topnav")
+          .classList.toggle("scrolled", window.scrollY > 40);
+      });
+    </script>
+  </body>
 </html>
