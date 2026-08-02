@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>John Marvin Ramos — Front-end Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <div class="dotgrid"></div>
+
+    <header class="site-header">
+      <span class="logo">John Marvin Ramos<span class="dot">.</span></span>
+      <nav class="site-nav">
+        <a href="#journey">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <svg
+          id="iSun"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+        <svg
+          id="iMoon"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          style="display: none"
+        >
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-intro">
+          <span class="status-pill"
+            ><span class="status-dot"></span>Available for work</span
+          >
+          <p class="eyebrow">I'm John Marvin Ramos, and I enjoy</p>
+          <h1 class="headline">
+            Crafting clean, <span class="accent">intuitive</span>
+            web experiences&nbsp;💻
+          </h1>
+          <p class="role">Front-end Web Developer</p>
+        </div>
+
+        <div class="hero-banner">
+          <img
+            src="images/avatar.jpg"
+            alt="John Marvin Ramos"
+            onerror="this.closest('.hero-banner').remove()"
+          />
+        </div>
+
+        <div class="hero-details">
+          <p class="bio">
+            Computer Science grad based in Tarlac City, Philippines, focused on
+            building fast, responsive interfaces with clean code.
+          </p>
+
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">View my work</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+
+          <div class="icon-row">
+            <a
+              href="https://www.facebook.com/JohnMarvinRamos.18"
+              target="_blank"
+              class="ibadge-link fb"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://github.com/PersonalComputerOne"
+              target="_blank"
+              class="ibadge-link gh"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/personalcomputerone/"
+              target="_blank"
+              class="ibadge-link ig"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle
+                  cx="17.5"
+                  cy="6.5"
+                  r="0.5"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+            <a
+              href="mailto:johnmarvinramos18@gmail.com"
+              class="plain-icon"
+              style="--ic: #f59e0b"
+              aria-label="Email"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 6l-10 7L2 6" />
+              </svg>
+            </a>
+            <a
+              href="tel:09206984385"
+              class="plain-icon"
+              style="--ic: var(--accent)"
+              aria-label="Phone"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.902.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.908.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <a href="#journey" class="scroll-cue" aria-label="Scroll down">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+      </section>
+
+      <div class="rule full"></div>
+
+      <!-- JOURNEY -->
+      <section class="section" id="journey">
+        <p class="lbl">Journey</p>
+        <div class="journey-body">
+          <p class="lead">
+            I'm a Computer Science graduate from Tarlac State University with a
+            genuine passion for designing and building websites — especially on
+            the front-end. Watching a design translate into something alive in
+            the browser never gets old.
+          </p>
+          <div class="edu-card reveal">
+            <p class="edu-degree">Bachelor of Science in Computer Science</p>
+            <p class="edu-school">
+              Tarlac State University · <span class="now">2021 – 2025</span>
+            </p>
+            <p class="edu-loc">
+              Romulo Blvd, San Vicente, Tarlac City, Philippines
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="rule full"></div>
+
+      <!-- SKILLS -->
+      <section class="section" id="skills">
+        <p class="lbl big">Skills</p>
+
+        <div class="skills-bento">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <p>
+              I like strongly-typed code as much as quick scripting — a solid
+              base for whatever the project calls for.
+            </p>
+            <div class="badge-row">
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java"
+                  onerror="iconFallback(this, 'Java')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  onerror="iconFallback(this, 'Py')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  onerror="iconFallback(this, 'JS')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"
+                  onerror="iconFallback(this, 'TS')"
+              /></span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Frameworks &amp; Libraries</h3>
+            <p>
+              My day-to-day toolkit for turning designs into fast, responsive
+              interfaces.
+            </p>
+            <div class="badge-row">
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  onerror="iconFallback(this, 'React')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="Tailwind CSS"
+                  onerror="iconFallback(this, 'TW')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  alt="Bootstrap"
+                  onerror="iconFallback(this, 'B')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bulma/bulma-original.svg"
+                  alt="Bulma"
+                  onerror="iconFallback(this, 'Bu')"
+              /></span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <h3>Tools &amp; Other</h3>
+            <p>
+              The markup, version control, and design tools that tie everything
+              together.
+            </p>
+            <div class="badge-row">
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML5"
+                  onerror="iconFallback(this, '5')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS3"
+                  onerror="iconFallback(this, '3')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git"
+                  onerror="iconFallback(this, 'Git')"
+              /></span>
+              <span class="ibadge"
+                ><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                  alt="Figma"
+                  onerror="iconFallback(this, 'Fig')"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="rule full"></div>
+
+      <!-- PROJECTS -->
+      <section class="section" id="projects">
+        <p class="lbl">Projects</p>
+        <h2 class="dive-title">Some things I've made</h2>
+
+        <div class="proj-rows">
+          <article class="proj-row reveal">
+            <div class="proj-media">
+              <div class="mockup-chrome"><i></i><i></i><i></i></div>
+              <img
+                src="images/music-taste.png"
+                alt="Web-Based Music Taste screenshot"
+              />
+            </div>
+            <div class="proj-info">
+              <div class="dive-links">
+                <a
+                  href="https://hear-me-out-alpha.vercel.app/"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Live site"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/PersonalComputerOne/Hear-Me-Out"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Source code"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <h3>Web-Based Music Taste</h3>
+              <p>
+                A web app to discover and share your music taste. Built with
+                React for a smooth, responsive experience.
+              </p>
+              <div class="badge-row small">
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React"
+                    onerror="iconFallback(this, 'React')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript"
+                    onerror="iconFallback(this, 'TS')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                    alt="Tailwind CSS"
+                    onerror="iconFallback(this, 'TW')"
+                /></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-row reveal">
+            <div class="proj-media">
+              <div class="mockup-chrome"><i></i><i></i><i></i></div>
+              <img
+                src="images/phishing.png"
+                alt="Phishing URL Detector screenshot"
+              />
+            </div>
+            <div class="proj-info">
+              <div class="dive-links">
+                <a
+                  href="https://github.com/PersonalComputerOne/Phish-On"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Source code"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <h3>Phishing URL Detector <span class="pill">Thesis</span></h3>
+              <p>
+                Chromium extension using the Levenshtein algorithm for
+                parallelized phishing detection. Vanilla frontend, Go +
+                PostgreSQL backend.
+              </p>
+              <div class="badge-row small">
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                    onerror="iconFallback(this, '5')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                    onerror="iconFallback(this, '3')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    onerror="iconFallback(this, 'JS')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.simpleicons.org/go/00ADD8"
+                    alt="Go"
+                    onerror="iconFallback(this, 'Go')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.simpleicons.org/postgresql/4169E1"
+                    alt="PostgreSQL"
+                    onerror="iconFallback(this, 'Pg')"
+                /></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-row reveal">
+            <div class="proj-media">
+              <div class="mockup-chrome"><i></i><i></i><i></i></div>
+              <img
+                src="images/flower-cards.png"
+                alt="Flower Cards screenshot"
+              />
+            </div>
+            <div class="proj-info">
+              <div class="dive-links">
+                <a
+                  href="https://personalcomputerone.github.io/jiro/"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Live site"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/PersonalComputerOne/PersonalComputerOne.github.io/tree/main/jiro"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Source code"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <h3>Flower Cards</h3>
+              <p>
+                A static website showcasing flowers with a clean card-based
+                layout. A study in visual hierarchy and layout design.
+              </p>
+              <div class="badge-row small">
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                    onerror="iconFallback(this, '5')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                    onerror="iconFallback(this, '3')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    onerror="iconFallback(this, 'JS')"
+                /></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="proj-row reveal">
+            <div class="proj-media">
+              <div class="mockup-chrome"><i></i><i></i><i></i></div>
+              <img src="images/bleach.png" alt="Bleach Anime screenshot" />
+            </div>
+            <div class="proj-info">
+              <div class="dive-links">
+                <a
+                  href="https://personalcomputerone.github.io/pc1/"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Live site"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"
+                    />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                </a>
+                <a
+                  href="https://personalcomputerone.github.io/PersonalComputerOne.github.io/tree/main/pc1"
+                  target="_blank"
+                  class="plink"
+                  aria-label="Source code"
+                >
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <h3>Bleach Anime</h3>
+              <p>
+                Fan site for the Bleach series — Soul Reaper Archives. Designed
+                with atmosphere and editorial flair.
+              </p>
+              <div class="badge-row small">
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                    alt="HTML5"
+                    onerror="iconFallback(this, '5')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                    alt="CSS3"
+                    onerror="iconFallback(this, '3')"
+                /></span>
+                <span class="ibadge sm"
+                  ><img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript"
+                    onerror="iconFallback(this, 'JS')"
+                /></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="rule full"></div>
+
+      <!-- PHILOSOPHY -->
+      <section class="section" id="philosophy">
+        <p class="lbl big">Philosophy</p>
+        <div class="quote-card reveal">
+          <span class="quote-mark">&#8220;</span>
+          <p class="quote-text">
+            Less is more. Simplicity is not a limitation — it is the freedom to
+            not be afraid.
+          </p>
+          <p class="quote-sub">My design philosophy</p>
+        </div>
+      </section>
+
+      <div class="rule full"></div>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <p class="lbl big">Let's build something</p>
+        <div class="contact-card reveal">
+          <p class="contact-invite">
+            Open to front-end roles and freelance work — feel free to reach out.
+          </p>
+          <a href="mailto:johnmarvinramos18@gmail.com" class="btn btn-primary"
+            >Email me</a
+          >
+          <div class="contact-row">
+            <div class="contact-item">
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">09206984385</p>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Email</p>
+              <p class="contact-value">johnmarvinramos18@gmail.com</p>
+            </div>
+            <div class="contact-item">
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Tarlac City, Philippines</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="rule full"></div>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-icons">
+        <a
+          href="https://www.facebook.com/JohnMarvinRamos.18"
+          target="_blank"
+          class="ibadge-link fb"
+          aria-label="Facebook"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://github.com/PersonalComputerOne"
+          target="_blank"
+          class="ibadge-link gh"
+          aria-label="GitHub"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.933.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.164 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/personalcomputerone/"
+          target="_blank"
+          class="ibadge-link ig"
+          aria-label="Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle
+              cx="17.5"
+              cy="6.5"
+              r="0.5"
+              fill="currentColor"
+              stroke="none"
+            />
+          </svg>
+        </a>
+        <a
+          href="mailto:johnmarvinramos18@gmail.com"
+          class="plain-icon"
+          style="--ic: #f59e0b"
+          aria-label="Email"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg>
+        </a>
+        <a
+          href="tel:09206984385"
+          class="plain-icon"
+          style="--ic: var(--accent)"
+          aria-label="Phone"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.902.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.908.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <p class="crafted">© 2026 John Marvin Ramos</p>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+        &times;
+      </button>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
