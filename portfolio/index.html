@@ -742,6 +742,156 @@
       </button>
       <img id="lightboxImg" src="" alt="" />
     </div>
+    <!-- AI Chat Widget -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --chat--spacing: 0.6rem;
+        --chat--border-radius: 14px;
+        --chat--window--width: 400px;
+        --chat--window--height: min(75vh, 700px);
+        --chat--window--bottom: 24px;
+        --chat--window--right: 24px;
+
+        --chat--header--background: #0b0b0e;
+        --chat--header--color: #f3f3f6;
+        --chat--header--padding: 0.9rem 1.1rem;
+        --chat--header--border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
+        --chat--message--bot--background: #17171d;
+        --chat--message--bot--color: #f3f3f6;
+        --chat--message--bot--border: 1px solid rgba(255, 255, 255, 0.09);
+        --chat--message--font-size: 0.9rem;
+        --chat--message--padding: 0.6rem 0.85rem;
+        --chat--message--border-radius: 12px;
+
+        --chat--body--background: #0b0b0e;
+        --chat--footer--background: #0b0b0e;
+      }
+
+      #n8n-chat {
+        font-family: "Instrument Sans", sans-serif;
+      }
+
+      /* Input box */
+      .chat-inputs {
+        display: flex !important;
+        align-items: flex-end !important;
+        gap: 0.5rem !important;
+        background-color: #0b0b0e !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.09) !important;
+        padding: 0.75rem !important;
+      }
+      .chat-inputs textarea {
+        flex: 1 1 auto !important;
+        font-family: "Instrument Sans", sans-serif !important;
+        background-color: #17171d !important;
+        color: #f3f3f6 !important;
+        border: 1px solid rgba(255, 255, 255, 0.09) !important;
+        border-radius: 20px !important;
+        padding: 10px 16px !important;
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+        resize: none !important;
+        overflow-y: auto !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(255, 255, 255, 0.15) transparent !important;
+        max-height: 100px !important;
+      }
+      .chat-inputs textarea::-webkit-resizer {
+        display: none !important;
+      }
+      .chat-inputs textarea::placeholder {
+        color: #5a5a64 !important;
+      }
+      .chat-inputs textarea:focus {
+        border-color: #c9edad !important;
+        outline: none !important;
+      }
+      .chat-inputs textarea::-webkit-scrollbar {
+        width: 6px !important;
+      }
+      .chat-inputs textarea::-webkit-scrollbar-track {
+        background: transparent !important;
+      }
+      .chat-inputs textarea::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.15) !important;
+        border-radius: 10px !important;
+      }
+      .chat-inputs textarea::-webkit-scrollbar-button {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+      }
+
+      /* Send button */
+      .chat-input-send-button svg,
+      .chat-input-send-button path {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+
+      /* Toggle bubble (closed state) */
+      .chat-window-toggle {
+        background-color: #c9edad !important;
+      }
+      .chat-window-toggle svg,
+      .chat-window-toggle path {
+        fill: #ffffff !important;
+        stroke: #ffffff !important;
+      }
+
+      /* Anchor messages to the bottom, remove empty gap above them */
+      .chat-body {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-end !important;
+        overflow-y: auto !important;
+        overscroll-behavior: contain !important;
+      }
+      .chat-messages-list {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-top: 0 !important;
+        flex-shrink: 0 !important;
+      }
+      /* Full-screen on phones/small tablets */
+      @media (max-width: 640px) {
+        :root {
+          --chat--window--width: 100vw;
+          --chat--window--height: 100dvh;
+          --chat--window--bottom: 0px;
+          --chat--window--right: 0px;
+          --chat--border-radius: 0px;
+        }
+      }
+    </style>
+    <script type="module">
+      import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+      createChat({
+        webhookUrl:
+          "https://n8n-jirou.onrender.com/webhook/f3220bd1-4cb2-4230-a402-a7a75302802c/chat",
+        mode: "window",
+        showWelcomeScreen: false,
+        initialMessages: [
+          "Hi! I'm John Marvin's AI assistant 👋",
+          "Ask me anything about his projects, skills, or experience!",
+        ],
+        i18n: {
+          en: {
+            title: "Ask My AI Assistant",
+            subtitle: "I'll answer questions about John Marvin's work",
+            inputPlaceholder: "Type your question...",
+            getStarted: "New Conversation",
+            footer: "",
+          },
+        },
+      });
+    </script>
 
     <script src="main.js"></script>
   </body>
