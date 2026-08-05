@@ -157,11 +157,12 @@ body {
 }
 
 /* ── LAYOUT HELPERS ── */
+
 main {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 clamp(1.25rem, 5vw, 4rem);
 }
+
 .rule.full {
   width: 100vw;
   margin-left: calc(50% - 50vw);
